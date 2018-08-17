@@ -42,22 +42,36 @@ def resize_img_numpy(img_list, shape):
     return result
 
 
-#The following codes test the function above
-# label_list,img_list = get_image_data("/Users/frank/Documents/GitHub/alexnet-sbs/dataSet/train/NORMAL")
+# #The following codes test the function above
+# label_list, img_list = get_image_data("/Users/frank/Documents/GitHub/alexnet-sbs/dataSet/train/NORMAL")
 #
 # size = tf.constant([100, 100])
 #
-# test = resize_img_numpy(img_list[:10], size)[3]
+# img_dir = "/Users/frank/Documents/Github/alexnet-sbs/dataSet/train/normal_batch"
+#
+# batch_size = 100
+# batch_index = 0
+# sess = tf.InteractiveSession()
+
+test = np.load('/Users/frank/Documents/Github/alexnet-sbs/dataSet/train/normal_batch/batch0.npy')
+print(test.shape)
+
+# for start in range(0, len(img_list), batch_size):
+#     end = min(len(img_list), start+100)
+#     curr_batch = resize_img_numpy(img_list[start:end], size)
+#     curr_batch = sess.run(curr_batch)
+#     np.save(img_dir+"/batch"+str(batch_index), curr_batch)
+#     batch_index += 1
+
+# test = resize_img_numpy(img_list[:800], size)
 #
 # sess = tf.InteractiveSession()
-# im = sess.run(test)
+# all_img = sess.run(test)
+# print(np.array(all_img).shape)
+
 # row = im.shape[0]
 # column = im.shape[1]
 # im = im.flatten().reshape(row, column)
-#
-#
-#  with tf.Session() as sess:
-#      print(sess.run(test))
 #
 # plt.imshow(im[::], cmap="gray")
 # plt.show()
