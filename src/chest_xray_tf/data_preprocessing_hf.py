@@ -41,7 +41,7 @@ def resize_img_numpy(img_list, shape):
     return result
 
 
-#The following codes test the function above
+# #The following codes test the function above
 # label_list, img_list = get_image_data("/Users/frank/Documents/GitHub/alexnet-sbs/dataSet/train/NORMAL")
 #
 # size = tf.constant([100, 100])
@@ -51,21 +51,16 @@ def resize_img_numpy(img_list, shape):
 # batch_size = 100
 # batch_index = 0
 # sess = tf.InteractiveSession()
-#
+
+test = np.load('/Users/frank/Documents/Github/alexnet-sbs/dataSet/train/normal_batch/batch0.npy')
+print(test.shape)
+
 # for start in range(0, len(img_list), batch_size):
 #     end = min(len(img_list), start+100)
 #     curr_batch = resize_img_numpy(img_list[start:end], size)
 #     curr_batch = sess.run(curr_batch)
-#     print(type(curr_batch))
 #     np.save(img_dir+"/batch"+str(batch_index), curr_batch)
 #     batch_index += 1
-
-# test = np.load('/Users/frank/Documents/Github/alexnet-sbs/dataSet/train/normal_batch/batch0.npy')
-# im = test[0].reshape([100,100])
-# print(max(im.flatten()))
-# plt.imshow(im, cmap="gray")
-# plt.show()
-# print(1)
 
 # test = resize_img_numpy(img_list[:800], size)
 #
