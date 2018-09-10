@@ -88,3 +88,4 @@ biases = {
     "bn7": tf.Variable(tf.constant(1.0, shape=[4096]),      name="bn2"),
     "bn8": tf.Variable(tf.constant(1.0, shape=[n_classes]), name="bn3")
 }
+

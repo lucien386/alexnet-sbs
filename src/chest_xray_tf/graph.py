@@ -1,3 +1,1 @@
-# The creation of graph
-
 

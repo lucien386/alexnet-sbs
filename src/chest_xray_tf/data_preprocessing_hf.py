@@ -1,11 +1,10 @@
-# The functions that help pre-process(Not fetching) data should be put in here
+# Functions that preprocess (NOT FETCH) data should be put in here
 import numpy as np
 import tensorflow as tf
 from fetch_hf import get_image_data
 import matplotlib.pyplot as plt
 
-
-def largest_image_size(img_array):
+def largest_image_size(img_array): #Tom: possible np.amax() faster execution
     max_row = float('-inf')
     max_column = float('-inf')
     for i in range(1, len(img_array), 2):
@@ -13,12 +12,12 @@ def largest_image_size(img_array):
         if len(array) > max_row:
             max_row = len(array)
         if len(array[0]) > max_column:
-            max_column = len(array)
+            max_column = len(array[0])
     largest_size = (max_row, max_column)
     return largest_size
 
 
-def smallest_image_size(img_array):
+def smallest_image_size(img_array): #Tom: possible np.amax() faster execution
     min_row = float('inf')
     min_column = float('inf')
     for i in range(1, len(img_array), 2):
@@ -33,7 +32,7 @@ def smallest_image_size(img_array):
 
 def resize_img_numpy(img_list, shape):
     result = []
-    print("Start resizing images...")
+    print("Resizing images...")
     for img in img_list:
         img = tf.constant(img)
         img = tf.image.resize_images(img, shape)
@@ -80,5 +79,3 @@ def resize_img_numpy(img_list, shape):
 #
 # plt.imshow(im[::], cmap="gray")
 # plt.show()
-
-

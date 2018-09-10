@@ -1,6 +1,6 @@
 import tensorflow as tf
 
-# All the functions that help creat layers should be define here
+# All the functions that help create layers should be defined here
 # The actual creation of each layer should be done in layer.py
 
 
@@ -33,4 +33,11 @@ def norm(input, w, b, keep_prob = 0.5, is_end = False):
 def fc_layer(input, w, b):
     fc = tf.nn.bias_add(tf.matmul(input, w), b)
     return fc
+
+
+def normal_full_layer(input_layer, size):
+    input_size = int(input_layer.get_shape()[1])
+    W = init_weights([input_size, size])
+    b = init_bias([size])
+    return tf.matmul(input_layer, W) + b
 

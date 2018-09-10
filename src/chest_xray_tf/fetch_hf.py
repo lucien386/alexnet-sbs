@@ -2,12 +2,12 @@ import os
 import numpy as np
 import cv2
 from numpy import newaxis
-# All the function that will be used to fetch unprocessed data should be put here
+# Functions fetching unprocessed data should be here
 
 
-# Given the address of a folder, parsing all the .jpeg file within the folder.
-# Return: an numpy array consisting 1. the label of the image
-#                                   2. the numpy array version of the image
+# Given the address of a folder, parse all the .jpeg files within the folder.
+# Return: an numpy array consisting 1. the labels of the images
+#                                   2. the numpy array version of the images
 def get_image_data(folder_address):
     label_list = []
     image_list = []
@@ -32,5 +32,3 @@ def get_image_data(folder_address):
     image_list = np.array(image_list, dtype=object)
     label_list = np.array(label_list, dtype=object)
     return label_list, image_list
-
-
