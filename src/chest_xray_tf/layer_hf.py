@@ -4,33 +4,33 @@ import tensorflow as tf
 # The actual creation of each layer should be done in layer.py
 
 
-def conv2d(x, w, strides=[1, 1, 1, 1], padding='SAME'):
-    return tf.nn.conv2d(x, w, strides=strides, padding=padding)
+# 2D convolution
+def conv2d(input, w, b, strides = [1, 1, 1, 1]):
+    conv = tf.nn.conv2d(input, w, strides=strides, padding="SAME", name="conv1")
+    conv = tf.nn.bias_add(conv, b)
+    conv = tf.nn.relu(conv)
+    conv = tf.nn.local_response_normalization(conv, depth_radius=5.0, bias=2.0, alpha=1e-4, beta=0.75)
+    conv = tf.nn.max_pool(conv, ksize=[1, 3, 3, 1], strides=[1, 2, 2, 1], padding="VALID")
+    return conv
 
 
-def max_pool_2by2(x, ksize=[1, 2, 2, 2], strides=[1, 2, 2, 1], padding='SAME'):
-    return tf.nn.max_pool(x, ksize=ksize,
-                          strides=strides, padding=padding)
+# Pooling
+def max_pool(input):
+    pool = tf.nn.local_response_normalization(input, depth_radius=5.0, bias=2.0, alpha=1e-4, beta=0.75)
+    pool = tf.nn.max_pool(pool, ksize=[1, 3, 3, 1], strides=[1, 2, 2, 1], padding="VALID")
+    return pool
 
 
-def init_weights(shape):
-    init_random_dist = tf.truncated_normal(shape, stddev=0.1)
-    return tf.Variable(init_random_dist)
+# Normal
+def norm(input, w, b, keep_prob = 0.5, is_end = False):
+    fc1 = fc_layer(input, w, b)
+    if not is_end:
+        fc1 = tf.nn.relu(fc1)
+        fc1 = tf.nn.dropout(fc1, keep_prob = keep_prob)
+    return fc1
 
 
-def init_bias(shape):
-    init_bias_vals = tf.constant(0.1, shape=shape)
-    return tf.Variable(init_bias_vals)
+def fc_layer(input, w, b):
+    fc = tf.nn.bias_add(tf.matmul(input, w), b)
+    return fc
 
-
-def convolutional_layer(input_x, shape):
-    W = init_weights(shape)
-    b = init_bias([shape[3]])
-    return tf.nn.relu(conv2d(input_x, W) + b)
-
-
-def normal_full_layer(input_layer, size):
-    input_size = int(input_layer.get_shape()[1])
-    W = init_weights([input_size, size])
-    b = init_bias([size])
-    return tf.matmul(input_layer, W) + b
