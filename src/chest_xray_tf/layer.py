@@ -6,11 +6,11 @@ import numpy as np
 
 # Constants
 learning_rate = 0.001
-# training_iters = 200000
+training_iters = 200000
 batch_size = 100 # 100 image at a time
-display_step = 20 # Output frequency
+display_step = 50 # Output frequency
 image_size = 273
-n_input = image_size**2 # 100*100
+n_input = image_size**2 # 273*273
 n_classes = 2 # Illed or not
 
 
@@ -25,7 +25,7 @@ def alex_net(input_x, weights, biases, dropout):
 
     # First Layer
     w, b = weights["wc1"], biases["bc1"]
-    conv1 = conv2d(input, w, b, strides=[1, 4, 4, 1])
+    conv1 = conv2d(input_x, w, b, strides=[1, 4, 4, 1])
     pool1 = max_pool(conv1)
 
     # Second Layer

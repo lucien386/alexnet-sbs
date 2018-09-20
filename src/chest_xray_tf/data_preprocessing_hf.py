@@ -44,7 +44,7 @@ def resize_img_numpy(img_list, shape):
 #The following codes test the function above
 # label_list, img_list = get_image_data("/Users/frank/Documents/GitHub/alexnet-sbs/dataSet/train/NORMAL")
 #
-# size = tf.constant([100, 100])
+# size = tf.constant([273, 273])
 #
 # img_dir = "/Users/frank/Documents/Github/alexnet-sbs/dataSet/train/normal_batch"
 #
