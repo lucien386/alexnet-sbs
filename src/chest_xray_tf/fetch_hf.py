@@ -20,13 +20,13 @@ def get_image_data(folder_address):
             img_array = cv2.imread(img_path, 0)  # Converting image into numpy array
             img_array = np.reshape(img_array, img_array.shape + (1,))
             if filename.find("bacteria") != -1:
-                label_list.append("bacteria")
+                label_list.append(np.array([0,1]))
                 image_list.append(img_array)
             elif filename.find("virus") != -1:
-                label_list.append("virus")
+                label_list.append(np.array([0,1]))
                 image_list.append(img_array)
             else:
-                label_list.append("normal")
+                label_list.append(np.array([1,0]))
                 image_list.append(img_array)
         print("Done.")
     image_list = np.array(image_list, dtype=object)
