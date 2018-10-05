@@ -14,7 +14,7 @@ def get_image_data(folder_address):
     directory = os.fsencode(folder_address)
     for file in os.listdir(directory):  # Iterate through the folder
         filename = os.fsdecode(file)  # File name in string
-        print("Parsing: " + filename + "...")
+        # print("Parsing: " + filename + "...")
         if filename.endswith(".jpeg"):
             img_path = folder_address + "/" + filename
             img_array = cv2.imread(img_path, 0)  # Converting image into numpy array
@@ -28,7 +28,7 @@ def get_image_data(folder_address):
             else:
                 label_list.append(np.array([1,0]))
                 image_list.append(img_array)
-        print("Done.")
+        # print("Done.")
     image_list = np.array(image_list, dtype=object)
     label_list = np.array(label_list, dtype=object)
     return label_list, image_list

@@ -2,6 +2,7 @@
 import numpy as np
 import tensorflow as tf
 from fetch_hf import get_image_data
+import os
 import matplotlib.pyplot as plt
 
 sess = tf.InteractiveSession()
@@ -52,16 +53,26 @@ def resize_and_store_img(img_list, img_dir , batch_size = 100, batch_index = 0, 
         batch_index += 1
 
 
+
 normal_train = "/Users/frank/Documents/GitHub/alexnet-sbs/dataSet/train/NORMAL"
 illed_train = "/Users/frank/Documents/GitHub/alexnet-sbs/dataSet/train/PNEUMONIA"
 label_list_normal_train, img_list_normal_train = get_image_data(normal_train)
 label_list_illed_train, img_list_illed_train = get_image_data(illed_train)
 
-img_dir = "/Users/frank/Documents/Github/alexnet-sbs/dataSet/train/normal_batch"
-size = tf.constant([273, 273])
+normal = list(zip(label_list_normal_train, img_list_normal_train))
+illed = list(zip(label_list_illed_train, img_list_illed_train))
 
-# resize_and_store_img(img_list_normal_train,
-#                      img_dir = "/Users/frank/Documents/Github/alexnet-sbs/dataSet/train/normal_batch")
+print((normal[0][1]))
+plt.plot(normal[0][1])
+plt.show()
 
-resize_and_store_img(img_list_illed_train,
-                     img_dir="/Users/frank/Documents/Github/alexnet-sbs/dataSet/train/illed_batch")
+# img_dir = "/Users/frank/Documents/Github/alexnet-sbs/dataSet/train/normal_batch"
+# size = tf.constant([273, 273])
+#
+# # resize_and_store_img(img_list_normal_train,
+# #                      img_dir = "/Users/frank/Documents/Github/alexnet-sbs/dataSet/train/normal_batch")
+#
+# # resize_and_store_img(img_list_illed_train,
+# #                      img_dir="/Users/frank/Documents/Github/alexnet-sbs/dataSet/train/illed_batch")
+#
+# for file in os.listdir("/Users/frank/Documents/Github/alexnet-sbs/dataSet/train/normal_batch")
