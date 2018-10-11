@@ -5,11 +5,14 @@ import tensorflow as tf
 import numpy as np
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #X is a reshaped 4D tensor with size [batch (param), height (param), width (param), channel = 1]
 #Output one-hot label: list (norma, bacteria, virus)
 def sbs_alex_net(X, W, b, dropout):
 	conv1 = convolutional_layer(X, shape = [])
 =======
+=======
+>>>>>>> e0370260f85b001f6172c9a318d14c0b98b784c4
 # Constants
 learning_rate = 0.001
 # training_iters = 200000
@@ -94,4 +97,8 @@ biases = {
     "bn7": tf.Variable(tf.constant(1.0, shape=[4096]),      name="bn2"),
     "bn8": tf.Variable(tf.constant(1.0, shape=[n_classes]), name="bn3")
 }
+<<<<<<< HEAD
 >>>>>>> revision
+=======
+
+>>>>>>> e0370260f85b001f6172c9a318d14c0b98b784c4
