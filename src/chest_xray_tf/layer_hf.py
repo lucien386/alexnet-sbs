@@ -3,13 +3,10 @@ import tensorflow as tf
 # All the functions that help create layers should be defined here
 # The actual creation of each layer should be done in layer.py
 
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 def conv2d(x, w, strides=[1, 1, 1, 1], padding='SAME'):
     return tf.nn.conv2d(x, w, strides=strides, padding=padding)
-=======
-=======
->>>>>>> e0370260f85b001f6172c9a318d14c0b98b784c4
+
 
 # 2D convolution
 def conv2d(input, w, b, strides = [1, 1, 1, 1]):
@@ -19,10 +16,6 @@ def conv2d(input, w, b, strides = [1, 1, 1, 1]):
     conv = tf.nn.local_response_normalization(conv, depth_radius=5.0, bias=2.0, alpha=1e-4, beta=0.75)
     conv = tf.nn.max_pool(conv, ksize=[1, 3, 3, 1], strides=[1, 2, 2, 1], padding="VALID")
     return conv
-<<<<<<< HEAD
->>>>>>> revision
-=======
->>>>>>> e0370260f85b001f6172c9a318d14c0b98b784c4
 
 
 # Pooling
@@ -45,25 +38,17 @@ def fc_layer(input, w, b):
     fc = tf.nn.bias_add(tf.matmul(input, w), b)
     return fc
 
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 
 def convolutional_layer(input_x, shape):
     W = init_weights(shape)
     b = init_bias([shape[3]])
     return tf.nn.relu(conv2d(input_x, W) + b)
 
-=======
->>>>>>> e0370260f85b001f6172c9a318d14c0b98b784c4
 
 def normal_full_layer(input_layer, size):
     input_size = int(input_layer.get_shape()[1])
     W = init_weights([input_size, size])
     b = init_bias([size])
     return tf.matmul(input_layer, W) + b
-<<<<<<< HEAD
-=======
->>>>>>> revision
-=======
 
->>>>>>> e0370260f85b001f6172c9a318d14c0b98b784c4
