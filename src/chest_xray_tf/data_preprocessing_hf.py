@@ -65,14 +65,3 @@ illed = list(zip(label_list_illed_train, img_list_illed_train))
 print((normal[0][1]))
 plt.plot(normal[0][1])
 plt.show()
-
-# img_dir = "/Users/frank/Documents/Github/alexnet-sbs/dataSet/train/normal_batch"
-# size = tf.constant([273, 273])
-#
-# # resize_and_store_img(img_list_normal_train,
-# #                      img_dir = "/Users/frank/Documents/Github/alexnet-sbs/dataSet/train/normal_batch")
-#
-# # resize_and_store_img(img_list_illed_train,
-# #                      img_dir="/Users/frank/Documents/Github/alexnet-sbs/dataSet/train/illed_batch")
-#
-# for file in os.listdir("/Users/frank/Documents/Github/alexnet-sbs/dataSet/train/normal_batch")
