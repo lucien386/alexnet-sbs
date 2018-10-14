@@ -4,8 +4,11 @@ import tensorflow as tf
 from fetch_hf import get_image_data
 import os
 import matplotlib.pyplot as plt
+import cv2
 
 sess = tf.InteractiveSession()
+normal_train = "/Users/frank/Documents/GitHub/alexnet-sbs/dataSet/train/NORMAL"
+illed_train = "/Users/frank/Documents/GitHub/alexnet-sbs/dataSet/train/PNEUMONIA"
 
 def largest_image_size(img_array): #Tom: possible np.amax() faster execution
     max_row = float('-inf')
@@ -33,35 +36,37 @@ def smallest_image_size(img_array): #Tom: possible np.amax() faster execution
     return largest_size
 
 
-def resize_img_numpy(img_list, shape):
-    result = []
-    print("Resizing images...")
-    for img in img_list:
-        img = tf.constant(img)
-        img = tf.image.resize_images(img, shape)
-        result.append(img)
-    print("Done.")
-    return result
+def resize_img(img, shape):
+    resized = cv2.resize(img, shape, interpolation=cv2.INTER_AREA)
+    return resized
 
 
-def resize_and_store_img(img_list, img_dir , batch_size = 100, batch_index = 0, size = tf.constant([273, 273])):
-    for start in range(0, len(img_list), batch_size):
-        end = min(len(img_list), start + 100)
-        curr_batch = resize_img_numpy(img_list[start:end], size)
-        curr_batch = sess.run(curr_batch)
-        np.save(img_dir + "/batch" + str(batch_index), curr_batch)
-        batch_index += 1
+def div_and_save(lis, path, batch_size = 100):
+    max_len = len(lis)
+    for i in range(0, len(lis), batch_size):
+        temp = lis[i:min(i+100, max_len)]
+        file = path + "/" + "batch" + str(int(i/batch_size)) + ".npy"
+        print(file)
+        np.save(file, temp)
 
 
-
-normal_train = "/Users/frank/Documents/GitHub/alexnet-sbs/dataSet/train/NORMAL"
-illed_train = "/Users/frank/Documents/GitHub/alexnet-sbs/dataSet/train/PNEUMONIA"
+print("loading")
 label_list_normal_train, img_list_normal_train = get_image_data(normal_train)
 label_list_illed_train, img_list_illed_train = get_image_data(illed_train)
 
-normal = list(zip(label_list_normal_train, img_list_normal_train))
-illed = list(zip(label_list_illed_train, img_list_illed_train))
+print("resizing")
+resized_normal = []
+for img in img_list_normal_train:
+    resized_normal.append(resize_img(img, shape = (227, 227)))
 
-print((normal[0][1]))
-plt.plot(normal[0][1])
-plt.show()
+resized_illed = []
+for img in img_list_illed_train:
+    resized_illed.append(resize_img(img, shape = (227, 227)))
+
+print("zipping")
+normal = np.asarray(list(zip(label_list_normal_train, resized_normal)))
+illed = np.asarray(list(zip(label_list_illed_train, resized_illed)))
+
+combined = np.concatenate((normal, illed))
+np.random.shuffle(combined)
+div_and_save(combined, "/Users/frank/Documents/GitHub/alexnet-sbs/dataSet/parsed_train")

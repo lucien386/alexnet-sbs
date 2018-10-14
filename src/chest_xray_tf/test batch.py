@@ -1,8 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-test = np.load('/Users/frank/Documents/Github/alexnet-sbs/dataSet/train/normal_batch/batch0.npy')
-im = test[0].reshape([224, 224])
-print(max(im.flatten()))
-plt.imshow(im, cmap="gray")
+test = np.load('/Users/frank/Documents/GitHub/alexnet-sbs/dataSet/parsed_train/batch0.npy')
+img = test[0][1]
+plt.imshow(img)
 plt.show()

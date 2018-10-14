@@ -5,17 +5,13 @@ import tensorflow as tf
 import numpy as np
 
 
-#X is a reshaped 4D tensor with size [batch (param), height (param), width (param), channel = 1]
-#Output one-hot label: list (norma, bacteria, virus)
-def sbs_alex_net(X, W, b, dropout):
-	conv1 = convolutional_layer(X, shape = [])
 # Constants
 learning_rate = 0.001
 training_iters = 200000
 batch_size = 100 # 100 image at a time
 display_step = 50 # Output frequency
-image_size = 273
-n_input = image_size**2 # 273*273
+image_size = 227
+n_input = image_size**2 # 227*227
 n_classes = 2 # Illed or not
 
 

@@ -5,7 +5,7 @@ import os
 
 training_iters = 200
 directory = os.fsencode(path)
-
+path = "/Users/frank/Documents/Github/alexnet-sbs/dataSet/train/normal_batch"
 
 class batch_helper():
     def __init__(self):
@@ -26,7 +26,6 @@ with tf.Session() as sess:
     for i in range(training_iters):
         batch = feeder.next_batch()
         sess.run(train, feed_dict={x: batch[0], y_true: batch[1], hold_prob: 0.5})
-
         # PRINT OUT A MESSAGE EVERY 100 STEPS
         if i % 10 == 0:
             print('Currently on step {}'.format(i))

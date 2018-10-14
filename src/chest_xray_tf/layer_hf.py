@@ -39,16 +39,3 @@ def fc_layer(input, w, b):
     return fc
 
 
-
-def convolutional_layer(input_x, shape):
-    W = init_weights(shape)
-    b = init_bias([shape[3]])
-    return tf.nn.relu(conv2d(input_x, W) + b)
-
-
-def normal_full_layer(input_layer, size):
-    input_size = int(input_layer.get_shape()[1])
-    W = init_weights([input_size, size])
-    b = init_bias([size])
-    return tf.matmul(input_layer, W) + b
-
