@@ -5,7 +5,7 @@ import os
 
 training_iters = 200
 directory = os.fsencode(path)
-path = "/Users/frank/Documents/Github/alexnet-sbs/dataSet/train/normal_batch"
+path = "/Users/frank/Documents/GitHub/alexnet-sbs/dataSet/parsed_train"
 
 class batch_helper():
     def __init__(self):
