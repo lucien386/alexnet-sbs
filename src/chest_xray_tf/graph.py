@@ -36,7 +36,12 @@ with tf.Session() as sess:
     feeder.load_data()
     for i in range(training_iters):
         batch = feeder.next_batch()
-        sess.run(train, feed_dict={x_input: batch[0], y_true: batch[1], keep_prob: dropout})
+        cur_input = []
+        cur_label = []
+        for item in batch:
+            cur_label.append(item[0])
+            cur_input.append(item[1])
+        sess.run(train, feed_dict={x_input: cur_input, y_true: cur_label, keep_prob: dropout})
         # PRINT OUT A MESSAGE EVERY 100 STEPS
         if i % 100 == 0:
             print('Currently on step {}'.format(i))
