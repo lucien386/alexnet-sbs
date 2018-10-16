@@ -38,6 +38,7 @@ with tf.Session() as sess:
         batch = feeder.next_batch()
         cur_input = []
         cur_label = []
+        print(i)
         for item in batch:
             cur_label.append(item[0])
             cur_input.append(item[1])
