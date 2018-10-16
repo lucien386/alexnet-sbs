@@ -42,7 +42,7 @@ with tf.Session() as sess:
     sess.run(tf.global_variables_initializer())
     feeder = batch_helper()
     feeder.load_data()
-    feeder.set_test_img("/Users/frank/Documents/GitHub/alexnet-sbs/dataSet/parsed_test/batch3.npy")
+    feeder.set_test_img("/Users/frank/Documents/GitHub/alexnet-sbs/dataSet/parsed_test/batch0.npy")
     for i in range(training_iters):
         batch = feeder.next_batch()
         cur_input = []

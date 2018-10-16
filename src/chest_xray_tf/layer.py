@@ -6,13 +6,13 @@ import numpy as np
 
 
 # Constants
-learning_rate = 0.01
+learning_rate = 0.0001
 batch_size = 100 # 100 image at a time
-display_step = 50 # Output frequency
+display_step = 52 # Output frequency
 image_size = 227
 n_input = image_size**2 # 227*227
 n_classes = 2 # Illed or not
-training_iters = 20
+training_iters = 50
 dropout = 0.8
 
 # PlaceHolder
@@ -62,31 +62,31 @@ def alex_net(input_x, weights, biases, dropout):
     # Eighth Layer (Ending Stage)
     w, b = weights["wn3"], biases["bn3"]
     y_pred = norm(norm7, w, b, is_end=True)
-    y_pred = tf.nn.softmax(y_pred)
+    # y_pred = tf.nn.softmax(y_pred)
 
     return y_pred
 
 
 weights = {
-    "wc1": tf.Variable(tf.truncated_normal([11, 11, 1, 96],     stddev=0.01), name="wc1"),
-    "wc2": tf.Variable(tf.truncated_normal([5, 5, 96, 256],     stddev=0.01), name="wc2"),
-    "wc3": tf.Variable(tf.truncated_normal([3, 3, 256, 384],    stddev=0.01), name="wc3"),
-    "wc4": tf.Variable(tf.truncated_normal([3, 3, 384, 384],    stddev=0.01), name="wc4"),
-    "wc5": tf.Variable(tf.truncated_normal([3, 3, 384, 256],    stddev=0.01), name="wc5"),
-    "wn1": tf.Variable(tf.truncated_normal([7*7*256, 4096],   stddev=0.01), name="wn1"),
-    "wn2": tf.Variable(tf.truncated_normal([4096, 4096],        stddev=0.01), name="wn2"),
-    "wn3": tf.Variable(tf.truncated_normal([4096, n_classes],   stddev=0.01), name="wn3")
+    "wc1": tf.Variable(tf.truncated_normal([11, 11, 1, 96],     stddev=0.1), name="wc1"),
+    "wc2": tf.Variable(tf.truncated_normal([5, 5, 96, 256],     stddev=0.1), name="wc2"),
+    "wc3": tf.Variable(tf.truncated_normal([3, 3, 256, 384],    stddev=0.1), name="wc3"),
+    "wc4": tf.Variable(tf.truncated_normal([3, 3, 384, 384],    stddev=0.1), name="wc4"),
+    "wc5": tf.Variable(tf.truncated_normal([3, 3, 384, 256],    stddev=0.1), name="wc5"),
+    "wn1": tf.Variable(tf.truncated_normal([7*7*256, 4096],   stddev=0.1), name="wn1"),
+    "wn2": tf.Variable(tf.truncated_normal([4096, 4096],        stddev=0.1), name="wn2"),
+    "wn3": tf.Variable(tf.truncated_normal([4096, n_classes],   stddev=0.1), name="wn3")
 }
 
 
 biases = {
-    "bc1": tf.Variable(tf.constant(0.0, shape=[96]),        name="bc1"),
-    "bc2": tf.Variable(tf.constant(1.0, shape=[256]),       name="bc2"),
-    "bc3": tf.Variable(tf.constant(0.0, shape=[384]),       name="bc3"),
-    "bc4": tf.Variable(tf.constant(1.0, shape=[384]),       name="bc4"),
-    "bc5": tf.Variable(tf.constant(1.0, shape=[256]),       name="bc5"),
-    "bn1": tf.Variable(tf.constant(1.0, shape=[4096]),      name="bn1"),
-    "bn2": tf.Variable(tf.constant(1.0, shape=[4096]),      name="bn2"),
-    "bn3": tf.Variable(tf.constant(1.0, shape=[n_classes]), name="bn3")
+    "bc1": tf.Variable(tf.constant(10.0, shape=[96]),        name="bc1"),
+    "bc2": tf.Variable(tf.constant(111.0, shape=[256]),       name="bc2"),
+    "bc3": tf.Variable(tf.constant(10.0, shape=[384]),       name="bc3"),
+    "bc4": tf.Variable(tf.constant(111.0, shape=[384]),       name="bc4"),
+    "bc5": tf.Variable(tf.constant(111.0, shape=[256]),       name="bc5"),
+    "bn1": tf.Variable(tf.constant(111.0, shape=[4096]),      name="bn1"),
+    "bn2": tf.Variable(tf.constant(111.0, shape=[4096]),      name="bn2"),
+    "bn3": tf.Variable(tf.constant(111.0, shape=[n_classes]), name="bn3")
 }
 

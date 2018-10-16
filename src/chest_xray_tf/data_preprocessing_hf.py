@@ -89,4 +89,4 @@ np.random.shuffle(combined_test)
 
 div_and_save(combined_train, "/Users/frank/Documents/GitHub/alexnet-sbs/dataSet/parsed_train")
 
-div_and_save(combined_test, "/Users/frank/Documents/GitHub/alexnet-sbs/dataSet/parsed_test")
+div_and_save(combined_test, "/Users/frank/Documents/GitHub/alexnet-sbs/dataSet/parsed_test", batch_size = 500)
