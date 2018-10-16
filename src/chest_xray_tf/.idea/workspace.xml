@@ -2,8 +2,64 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96246e4c-e09f-40db-8800-e0c890152aeb" name="Default" comment="Finish Graph">
+      <change beforePath="$PROJECT_DIR$/../../dataSet/parsed_train/batch0.npy" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataSet/parsed_train/batch0.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dataSet/parsed_train/batch1.npy" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataSet/parsed_train/batch1.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dataSet/parsed_train/batch10.npy" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataSet/parsed_train/batch10.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dataSet/parsed_train/batch11.npy" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataSet/parsed_train/batch11.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dataSet/parsed_train/batch12.npy" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataSet/parsed_train/batch12.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dataSet/parsed_train/batch13.npy" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataSet/parsed_train/batch13.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dataSet/parsed_train/batch14.npy" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataSet/parsed_train/batch14.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dataSet/parsed_train/batch15.npy" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataSet/parsed_train/batch15.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dataSet/parsed_train/batch16.npy" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataSet/parsed_train/batch16.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dataSet/parsed_train/batch17.npy" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataSet/parsed_train/batch17.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dataSet/parsed_train/batch18.npy" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataSet/parsed_train/batch18.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dataSet/parsed_train/batch19.npy" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataSet/parsed_train/batch19.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dataSet/parsed_train/batch2.npy" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataSet/parsed_train/batch2.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dataSet/parsed_train/batch20.npy" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataSet/parsed_train/batch20.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dataSet/parsed_train/batch21.npy" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataSet/parsed_train/batch21.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dataSet/parsed_train/batch22.npy" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataSet/parsed_train/batch22.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dataSet/parsed_train/batch23.npy" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataSet/parsed_train/batch23.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dataSet/parsed_train/batch24.npy" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataSet/parsed_train/batch24.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dataSet/parsed_train/batch25.npy" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataSet/parsed_train/batch25.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dataSet/parsed_train/batch26.npy" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataSet/parsed_train/batch26.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dataSet/parsed_train/batch27.npy" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataSet/parsed_train/batch27.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dataSet/parsed_train/batch28.npy" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataSet/parsed_train/batch28.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dataSet/parsed_train/batch29.npy" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataSet/parsed_train/batch29.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dataSet/parsed_train/batch3.npy" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataSet/parsed_train/batch3.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dataSet/parsed_train/batch30.npy" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataSet/parsed_train/batch30.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dataSet/parsed_train/batch31.npy" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataSet/parsed_train/batch31.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dataSet/parsed_train/batch32.npy" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataSet/parsed_train/batch32.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dataSet/parsed_train/batch33.npy" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataSet/parsed_train/batch33.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dataSet/parsed_train/batch34.npy" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataSet/parsed_train/batch34.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dataSet/parsed_train/batch35.npy" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataSet/parsed_train/batch35.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dataSet/parsed_train/batch36.npy" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataSet/parsed_train/batch36.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dataSet/parsed_train/batch37.npy" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataSet/parsed_train/batch37.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dataSet/parsed_train/batch38.npy" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataSet/parsed_train/batch38.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dataSet/parsed_train/batch39.npy" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataSet/parsed_train/batch39.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dataSet/parsed_train/batch4.npy" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataSet/parsed_train/batch4.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dataSet/parsed_train/batch40.npy" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataSet/parsed_train/batch40.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dataSet/parsed_train/batch41.npy" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataSet/parsed_train/batch41.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dataSet/parsed_train/batch42.npy" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataSet/parsed_train/batch42.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dataSet/parsed_train/batch43.npy" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataSet/parsed_train/batch43.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dataSet/parsed_train/batch44.npy" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataSet/parsed_train/batch44.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dataSet/parsed_train/batch45.npy" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataSet/parsed_train/batch45.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dataSet/parsed_train/batch46.npy" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataSet/parsed_train/batch46.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dataSet/parsed_train/batch47.npy" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataSet/parsed_train/batch47.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dataSet/parsed_train/batch48.npy" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataSet/parsed_train/batch48.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dataSet/parsed_train/batch49.npy" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataSet/parsed_train/batch49.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dataSet/parsed_train/batch5.npy" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataSet/parsed_train/batch5.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dataSet/parsed_train/batch50.npy" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataSet/parsed_train/batch50.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dataSet/parsed_train/batch51.npy" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataSet/parsed_train/batch51.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dataSet/parsed_train/batch52.npy" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataSet/parsed_train/batch52.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dataSet/parsed_train/batch6.npy" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataSet/parsed_train/batch6.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dataSet/parsed_train/batch7.npy" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataSet/parsed_train/batch7.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dataSet/parsed_train/batch8.npy" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataSet/parsed_train/batch8.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dataSet/parsed_train/batch9.npy" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataSet/parsed_train/batch9.npy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-CNN-Project-Exercise-Solutions.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/03-CNN-Project-Exercise-Solutions.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocessing_hf.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_preprocessing_hf.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/graph.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layer.py" beforeDir="false" afterPath="$PROJECT_DIR$/layer.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,44 +70,66 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/chest_xray_tf$test_batch.coverage" NAME="test batch Coverage Results" MODIFIED="1539482027174" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/chest_xray_tf$layer_hf.coverage" NAME="layer_hf Coverage Results" MODIFIED="1531014681184" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/chest_xray_tf$graph.coverage" NAME="graph Coverage Results" MODIFIED="1539661537176" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/chest_xray_tf$graph.coverage" NAME="graph Coverage Results" MODIFIED="1539669295960" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/chest_xray_tf$data_preprocessing_hf.coverage" NAME="data_preprocessing_hf Coverage Results" MODIFIED="1538674703417" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/chest_xray_tf$test.coverage" NAME="test Coverage Results" MODIFIED="1531533012771" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/chest_xray_tf$chest_xray_tf.coverage" NAME="chest_xray_tf Coverage Results" MODIFIED="1539664371782" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/chest_xray_tf$fetch_hf.coverage" NAME="fetch_hf Coverage Results" MODIFIED="1531195408287" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+            <file pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/03-CNN-Project-Exercise-Solutions.ipynb">
+                <provider selected="true" editor-type-id="ipnb-editor">
+                  <state>
+                    <selected id="56" />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-647301050">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
-          <entry key="project.open.time.1" value="3" />
+          <entry key="project.closed" value="11" />
+          <entry key="project.open.time.1" value="5" />
           <entry key="project.open.time.2" value="3" />
           <entry key="project.open.time.6" value="2" />
           <entry key="project.open.time.7" value="3" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="13" />
+          <entry key="project.opened" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="1089" />
+          <entry key="py" value="1794" />
           <entry key="txt" value="56" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="56" />
-          <entry key="Python" value="1089" />
+          <entry key="Python" value="1794" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="1" />
+          <entry key="ipynb" value="3" />
+          <entry key="py" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="1" />
+          <entry key="IPNB" value="3" />
+          <entry key="Python" value="3" />
         </counts>
       </usages-collector>
     </session>
@@ -61,22 +139,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data_preprocessing_hf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="591">
-              <caret line="71" column="86" selection-start-line="71" selection-start-column="24" selection-end-line="71" selection-end-column="86" />
+            <state relative-caret-position="1080">
+              <caret line="72" selection-start-line="72" selection-end-line="72" />
               <folding>
                 <element signature="e#67#85#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fetch_hf.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -97,8 +163,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/graph.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="403">
+              <caret line="53" column="38" selection-start-line="53" selection-start-column="38" selection-end-line="53" selection-end-column="38" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -106,11 +172,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/layer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+            <state relative-caret-position="-27">
+              <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
               <folding>
                 <element signature="e#0#27#0" expanded="true" />
               </folding>
@@ -121,17 +187,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/layer_hf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/03-CNN-Project-Exercise-Solutions.ipynb">
-          <provider selected="true" editor-type-id="ipnb-editor">
-            <state>
-              <selected id="55" />
+            <state relative-caret-position="315">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
@@ -151,6 +208,12 @@
       <find>trai</find>
       <find>w[</find>
       <find>convo</find>
+      <find>y_pr</find>
+      <find>train</find>
+      <find>x</find>
+      <find>training</find>
+      <find>normal_train</find>
+      <find>end</find>
       <find>273</find>
     </findStrings>
   </component>
@@ -165,11 +228,12 @@
         <option value="$PROJECT_DIR$/fetchHelperFunction.py" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/fetch_hf.py" />
-        <option value="$PROJECT_DIR$/data_preprocessing_hf.py" />
         <option value="$PROJECT_DIR$/layer_hf.py" />
-        <option value="$PROJECT_DIR$/layer.py" />
         <option value="$PROJECT_DIR$/test batch.py" />
+        <option value="$PROJECT_DIR$/03-CNN-Project-Exercise-Solutions.ipynb" />
+        <option value="$PROJECT_DIR$/data_preprocessing_hf.py" />
         <option value="$PROJECT_DIR$/graph.py" />
+        <option value="$PROJECT_DIR$/layer.py" />
       </list>
     </option>
   </component>
@@ -180,8 +244,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="y" value="23" />
     <option name="width" value="1680" />
-    <option name="height" value="1050" />
+    <option name="height" value="975" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -224,6 +289,24 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.graph">
+    <configuration name="chest_xray_tf" type="JupiterNotebook" factoryName="Jupyter Notebook">
+      <module name="chest_xray_tf" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="additionalOptions" value="" />
+      <option name="ipnbHost" value="127.0.0.1" />
+      <option name="ipnbPort" value="8888" />
+      <method v="2" />
+    </configuration>
     <configuration name="data_preprocessing_hf" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="chest_xray_tf" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -335,6 +418,7 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Jupyter Notebook.chest_xray_tf" />
       <item itemvalue="Python.fetch_hf" />
       <item itemvalue="Python.data_preprocessing_hf" />
       <item itemvalue="Python.test" />
@@ -344,8 +428,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.graph" />
-        <item itemvalue="Python.test batch" />
         <item itemvalue="Python.data_preprocessing_hf" />
+        <item itemvalue="Python.test batch" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.fetch_hf" />
       </list>
@@ -390,13 +474,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15445666" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15811966" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.29591838" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.29591838" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3989796" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -412,8 +497,8 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="right" x="563" y="178" width="554" height="693" id="SciView" order="4" sideWeight="0.4594203" visible="true" weight="0.25030527" />
-      <window_info anchor="right" x="0" y="0" width="370" height="775" id="Documentation" order="5" sideWeight="0.54057974" side_tool="true" visible="true" weight="0.25030527" />
+      <window_info anchor="right" x="563" y="178" width="554" height="693" id="SciView" order="4" sideWeight="0.45816326" visible="true" weight="0.25030527" />
+      <window_info anchor="right" x="0" y="0" width="370" height="775" id="Documentation" order="5" sideWeight="0.54183674" side_tool="true" visible="true" weight="0.25030527" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -433,33 +518,6 @@
     <entry file="file://$PROJECT_DIR$/dataPreprocessingHelperFunction.py" />
     <entry file="file://$PROJECT_DIR$/fetchHelperFunction.py" />
     <entry file="file://$PROJECT_DIR$/test.py" />
-    <entry file="file://$PROJECT_DIR$/layer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/layer_hf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_preprocessing_hf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="591">
-          <caret line="71" column="86" selection-start-line="71" selection-start-column="24" selection-end-line="71" selection-end-column="86" />
-          <folding>
-            <element signature="e#67#85#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fetch_hf.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -467,6 +525,23 @@
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_preprocessing_hf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="72" selection-start-line="72" selection-end-line="72" />
+          <folding>
+            <element signature="e#67#85#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/03-CNN-Project-Exercise-Solutions.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="56" />
         </state>
       </provider>
     </entry>
@@ -480,20 +555,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Library/Python/3.6/lib/python/site-packages/chardet/escprober.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/graph.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="403">
+          <caret line="53" column="38" selection-start-line="53" selection-start-column="38" selection-end-line="53" selection-end-column="38" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/03-CNN-Project-Exercise-Solutions.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="56" />
+    <entry file="file://$PROJECT_DIR$/layer_hf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-27">
+          <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

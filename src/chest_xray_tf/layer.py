@@ -6,13 +6,13 @@ import numpy as np
 
 
 # Constants
-learning_rate = 0.001
+learning_rate = 0.01
 batch_size = 100 # 100 image at a time
 display_step = 50 # Output frequency
 image_size = 227
 n_input = image_size**2 # 227*227
 n_classes = 2 # Illed or not
-training_iters = 200
+training_iters = 20
 dropout = 0.8
 
 # PlaceHolder
@@ -27,12 +27,12 @@ def alex_net(input_x, weights, biases, dropout):
     # First Layer
     w, b = weights["wc1"], biases["bc1"]
     conv1 = conv2d(input_x, w, b, strides=[1, 4, 4, 1])
-    pool1 = max_pool(conv1,2)
+    pool1 = max_pool(conv1, 2)
 
     # Second Layer
     w, b = weights["wc2"], biases["bc2"]
     conv2 = conv2d(pool1, w, b)
-    pool2 = max_pool(conv2,2)
+    pool2 = max_pool(conv2, 2)
 
     # Third Layer
     w, b = weights["wc3"], biases["bc3"]
@@ -61,10 +61,10 @@ def alex_net(input_x, weights, biases, dropout):
 
     # Eighth Layer (Ending Stage)
     w, b = weights["wn3"], biases["bn3"]
-    end = norm(norm7, w, b, is_end=True)
-    end = tf.nn.softmax(end)
+    y_pred = norm(norm7, w, b, is_end=True)
+    y_pred = tf.nn.softmax(y_pred)
 
-    return end
+    return y_pred
 
 
 weights = {

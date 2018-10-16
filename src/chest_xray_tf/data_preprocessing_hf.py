@@ -9,6 +9,8 @@ import cv2
 sess = tf.InteractiveSession()
 normal_train = "/Users/frank/Documents/GitHub/alexnet-sbs/dataSet/train/NORMAL"
 illed_train = "/Users/frank/Documents/GitHub/alexnet-sbs/dataSet/train/PNEUMONIA"
+normal_test = "/Users/frank/Documents/GitHub/alexnet-sbs/dataSet/test/NORMAL"
+illed_test = "/Users/frank/Documents/GitHub/alexnet-sbs/dataSet/test/PNEUMONIA"
 
 def largest_image_size(img_array): #Tom: possible np.amax() faster execution
     max_row = float('-inf')
@@ -53,20 +55,38 @@ def div_and_save(lis, path, batch_size = 100):
 print("loading")
 label_list_normal_train, img_list_normal_train = get_image_data(normal_train)
 label_list_illed_train, img_list_illed_train = get_image_data(illed_train)
+label_list_normal_test, img_list_normal_test = get_image_data(normal_test)
+label_list_illed_test, img_list_illed_test = get_image_data(illed_test)
 
 print("resizing")
-resized_normal = []
+resized_normal_train = []
 for img in img_list_normal_train:
-    resized_normal.append(resize_img(img, shape = (227, 227)))
+    resized_normal_train.append(resize_img(img, shape = (227, 227)))
 
-resized_illed = []
+resized_illed_train = []
 for img in img_list_illed_train:
-    resized_illed.append(resize_img(img, shape = (227, 227)))
+    resized_illed_train.append(resize_img(img, shape = (227, 227)))
+
+resized_normal_test = []
+for img in img_list_normal_test:
+    resized_normal_test.append(resize_img(img, shape = (227, 227)))
+
+resized_illed_test = []
+for img in img_list_illed_test:
+    resized_illed_test.append(resize_img(img, shape = (227, 227)))
 
 print("zipping")
-normal = np.asarray(list(zip(label_list_normal_train, resized_normal)))
-illed = np.asarray(list(zip(label_list_illed_train, resized_illed)))
+normal_train = np.asarray(list(zip(label_list_normal_train, resized_normal_train)))
+illed_train = np.asarray(list(zip(label_list_illed_train, resized_illed_train)))
 
-combined = np.concatenate((normal, illed))
-np.random.shuffle(combined)
-div_and_save(combined, "/Users/frank/Documents/GitHub/alexnet-sbs/dataSet/parsed_train")
+normal_test = np.asarray(list(zip(label_list_normal_test, resized_normal_test)))
+illed_test = np.asarray(list(zip(label_list_illed_test, resized_illed_test)))
+
+combined_train = np.concatenate((normal_train, illed_train))
+combined_test = np.concatenate((normal_test, illed_test))
+np.random.shuffle(combined_train)
+np.random.shuffle(combined_test)
+
+div_and_save(combined_train, "/Users/frank/Documents/GitHub/alexnet-sbs/dataSet/parsed_train")
+
+div_and_save(combined_test, "/Users/frank/Documents/GitHub/alexnet-sbs/dataSet/parsed_test")
