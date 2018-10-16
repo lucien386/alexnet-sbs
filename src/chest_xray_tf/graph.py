@@ -6,7 +6,7 @@ import glob
 
 
 # this depends on your own file path!
-path = "D:/alexnet-sbs/dataSet/parsed_train/*.npy"
+path = "/Users/frank/Documents/GitHub/alexnet-sbs/dataSet/parsed_train/*.npy"
 fnames = glob.glob(path)
 #test_path = "D:/alexnet-sbs/dataSet//*.npy"
 class batch_helper():
@@ -36,7 +36,8 @@ with tf.Session() as sess:
     feeder.load_data()
     for i in range(training_iters):
         batch = feeder.next_batch()
-        sess.run(train, feed_dict={x_input: batch[0], y_true: batch[1], keep_prob: dropout})
+        print(batch[0])
+        sess.run(train, feed_dict={x_input: batch[1], y_true: batch[0], keep_prob: dropout})
         # PRINT OUT A MESSAGE EVERY 100 STEPS
         if i % 100 == 0:
             print('Currently on step {}'.format(i))
