@@ -23,9 +23,9 @@ n_input = 784
 n_classes = 10
 dropout = 0.8  # Dropout probability
 # PLACEHOLDERS
-x = tf.placeholder(tf.types.float32, [None, n_input])
-y = tf.placeholder(tf.types.float32, [None, n_classes])
-keep_prob = tf.placeholder(tf.types.float32)
+x = tf.placeholder(tf.float32, [None, n_input])
+y = tf.placeholder(tf.float32, [None, n_classes])
+keep_prob = tf.placeholder(tf.float32)
 
 def conv2d(name, l_input, w, b):
     return tf.nn.relu(tf.nn.bias_add( \
@@ -85,7 +85,7 @@ biases = {
 # BUILD NET
 pred = alex_net(x, weights, biases, keep_prob)
 # COST FUNCTION AND OPTIMIZATION
-cost = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(pred, y))
+cost = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(labels = pred, logits = y))
 optimizer = tf.train.AdamOptimizer(learning_rate=learning_rate).minimize(cost)
 # TEST NETWORK
 correct_pred = tf.equal(tf.argmax(pred,1), tf.argmax(y,1))
@@ -103,7 +103,7 @@ with tf.Session() as sess:
         if step % display_step == 0: #DEBUGGING OUTPUT
             acc = sess.run(accuracy, feed_dict={x: batch_xs, y: batch_ys, keep_prob: 1.})
             loss = sess.run(cost, feed_dict={x: batch_xs, y: batch_ys, keep_prob: 1.})
-            print "Iter " + str(step*batch_size) + ", Minibatch Loss= " + "{:.6f}".format(loss) + ", Training Accuracy= " + "{:.5f}".format(acc)
+            print ("Iter " + str(step*batch_size) + ", Minibatch Loss= " + "{:.6f}".format(loss) + ", Training Accuracy= " + "{:.5f}".format(acc))
         step += 1
-    print "Optimization Finished!"
-    print "Testing Accuracy:", sess.run(accuracy, feed_dict={x: mnist.test.images[:256], y: mnist.test.labels[:256], keep_prob: 1.})
+    print ("Optimization Finished!")
+    print ("Testing Accuracy:", sess.run(accuracy, feed_dict={x: mnist.test.images[:256], y: mnist.test.labels[:256], keep_prob: 1.}))
