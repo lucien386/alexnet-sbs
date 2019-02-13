@@ -6,7 +6,8 @@ import glob
 
 
 # this depends on your own file path!
-path = "/Users/frank/Documents/GitHub/alexnet-sbs/dataSet/parsed_train/*.npy"
+
+path = 'C:/Users/eid7/Documents/GitHub/alexnet-sbs/dataSet/parsed_test/*.npy'
 fnames = glob.glob(path)
 #test_path = "D:/alexnet-sbs/dataSet//*.npy"
 class batch_helper():
@@ -42,7 +43,7 @@ with tf.Session() as sess:
     sess.run(tf.global_variables_initializer())
     feeder = batch_helper()
     feeder.load_data()
-    feeder.set_test_img("/Users/frank/Documents/GitHub/alexnet-sbs/dataSet/parsed_test/batch0.npy")
+    feeder.set_test_img("C:/Users/eid7/Documents/GitHub/alexnet-sbs/dataSet/parsed_test")
     for i in range(training_iters):
         batch = feeder.next_batch()
         cur_input = []
